@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body,div#root{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #001724e8;
+}
+
+section#home{
+    height: 100%;
+    background: #001724a4 url(../img/slide/slide-17.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+}
+
+section#home div.container div.row div.col-md-6 button.btn{
+    width: 15rem;
+    padding-block: .8rem;
+}
+
+section#contact{
+    background: #001724a4 url(../img/hero-bg.jpg);
+    background-blend-mode: soft-light;
+    padding-bottom: 2rem;
+}
+section#contact .container .row .col-md-6 .card{
+    background: rgba(0, 87, 109, 0.288);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+section#contact .container .row .col-md-6 .card input,
+section#contact .container .row .col-md-6 .card textarea{
+    background: transparent;
+
+}
