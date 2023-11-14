@@ -1,15 +1,16 @@
 import React from 'react'
-import MyNavbar from './components/partials/MyNavbar'
-import Home from './components/pages/Home'
 import "./assets/css/index.css"
-import MyFooter from './components/partials/MyFooter'
+import { BrowserRouter, ScrollRestoration} from 'react-router-dom'
+import Router from './components/router/Router'
+
 export default function App() {
-    const title = "MonBlog"
+
+   
   return (
-    <>
-        <MyNavbar title={title}/>
-        <Home title={title}/>
-        <MyFooter/>
-    </>
+      <BrowserRouter>
+        <Router/>
+
+      </BrowserRouter>
+        
   )
 }

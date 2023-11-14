@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import Articles from './Home/Articles'
 import Contact from './Home/Contact'
+import Api from '../api/Api'
 
 export default function Home(props) {
+    const [post, setPost] = useState([])
+    useEffect(()=>{
+        
+    },[])
   return (
     <>
         <section id='home'>
@@ -39,7 +44,7 @@ export default function Home(props) {
                 </Row>
             </Container>
         </section>
-        <Articles/>
+        <Articles articles={post}/>
         <Contact/>
     </>
   )
